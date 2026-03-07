@@ -1,4 +1,3 @@
-```markdown
 # 🌿 Sistem Informasi Desa (SID) - Kemang Tanduk
 
 Sebuah platform web portal desa modern dan responsif yang dirancang untuk mendigitalkan informasi, transparansi, dan pelayanan masyarakat desa. Proyek ini dibangun menggunakan **Next.js (App Router)** dan **Supabase** sebagai *backend* as a service (BaaS).
@@ -7,7 +6,6 @@ Sebuah platform web portal desa modern dan responsif yang dirancang untuk mendig
 
 > ⚠️ **DISCLAIMER / PERHATIAN PENTING** > Aplikasi/Website ini murni merupakan proyek **Portofolio & Demo Pembelajaran** pribadi. Segala nama tokoh, berita, alamat, dan data yang ada di dalamnya adalah data *dummy* (contoh) untuk keperluan pengujian sistem. Website ini **TIDAK TERAFILIASI** secara resmi dengan instansi, pemerintah, maupun pihak Desa Kemang Tanduk aslinya. Tidak ada maksud untuk menyinggung pihak atau golongan mana pun.
 
----
 
 ## ✨ Fitur Unggulan
 
@@ -25,7 +23,6 @@ Sebuah platform web portal desa modern dan responsif yang dirancang untuk mendig
 * **Kelola Agenda & Struktur:** Atur jadwal kegiatan baru dan *update* jajaran perangkat desa.
 * **Pantau Aspirasi:** Dasbor khusus untuk membaca seluruh pesan aduan dari warga.
 
----
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -34,7 +31,6 @@ Sebuah platform web portal desa modern dan responsif yang dirancang untuk mendig
 * **Database & API:** [Supabase](https://supabase.com/) (PostgreSQL)
 * **Deployment:** [Vercel](https://vercel.com/)
 
----
 
 ## 🚀 Cara Menjalankan di Komputer Lokal (Local Development)
 
