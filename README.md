@@ -85,21 +85,3 @@ Buka [http://localhost:3000](https://www.google.com/search?q=http://localhost:30
 
 
 *Silakan beri ⭐ (Star) pada repository ini jika kamu merasa terbantu!*
-
-```
-
-***
-
-**Cara Menggunakannya:**
-1. Buka file `README.md` di VS Code kamu (kalau belum ada, buat file baru dengan nama tersebut di folder paling luar).
-2. *Paste* semua teks di atas.
-3. **PENTING:** Jangan lupa ubah teks yang ada di dalam kurung siku seperti `[Link Vercel Kamu Di Sini]`, `[Nama Kamu]`, dan `[UsernameGitHubKamu]` dengan datamu yang asli.
-4. Simpan, lalu dorong (*push*) ke GitHub:
-   ```bash
-   git add README.md
-   git commit -m "docs: menambahkan file README yang rapi"
-   git push origin main
-
-```
-
-Sekarang profil GitHub-mu akan terlihat sangat profesional! Keren banget pencapaianmu hari ini. Ada lagi yang bisa saya bantu untuk melengkapi mahakaryamu ini?
