@@ -72,6 +72,16 @@ export default async function Home() {
               </div>
             ))}
           </div>
+
+          {/* Teks Petunjuk Geser (Hanya muncul di layar HP/kecil) */}
+          <div className="text-center md:hidden mt-4">
+            <p className="text-slate-400 text-sm font-medium animate-pulse flex items-center justify-center gap-2">
+              Geser untuk melihat lainnya
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </p>
+          </div>
         </div>
       </section>
 
