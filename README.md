@@ -1,11 +1,6 @@
 ```markdown
 # 🌿 Sistem Informasi Desa (SID) - Kemang Tanduk
 
-![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
 Sebuah platform web portal desa modern dan responsif yang dirancang untuk mendigitalkan informasi, transparansi, dan pelayanan masyarakat desa. Proyek ini dibangun menggunakan **Next.js (App Router)** dan **Supabase** sebagai *backend* as a service (BaaS).
 
 🌐 **Live Demo:** [Tulis Link Vercel Kamu Di Sini, contoh: https://desa-kemang-tanduk.vercel.app]
