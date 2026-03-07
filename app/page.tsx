@@ -14,9 +14,6 @@ export default async function Home() {
 
       {/* 1. HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 bg-slate-50">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-emerald-200 rounded-full mix-blend-multiply filter blur-[120px] opacity-40 animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-[120px] opacity-60"></div>
-        
         <div className="relative z-10 text-center max-w-4xl mt-16">
           <span className="text-emerald-700 font-bold tracking-[0.3em] uppercase text-xs mb-6 inline-block bg-emerald-100 px-5 py-2.5 rounded-full border border-emerald-200/50">
             Portal Resmi Pemerintah Desa
