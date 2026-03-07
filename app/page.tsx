@@ -15,10 +15,25 @@ export default async function Home() {
     <div className="bg-slate-50 text-slate-800 min-h-screen selection:bg-emerald-500 selection:text-white font-sans">
       <Navbar />
 
-      {/* 1. HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 bg-slate-50">
+      {/* 1. HERO SECTION DENGAN GAMBAR BACKGROUND */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
+        {/* Gambar Latar Belakang */}
+        <div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('https://fajarsumsel.com/wp-content/uploads/2026/01/IMG-20260120-WA0532.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
+        
+        {/* Overlay Putih Transparan agar teks gelap tetap terbaca jelas */}
+        <div className="absolute inset-0 z-0 bg-white/80 backdrop-blur-[2px]"></div>
+
+        {/* Konten Teks Hero */}
         <div className="relative z-10 text-center max-w-4xl mt-16">
-          <span className="text-emerald-700 font-bold tracking-[0.3em] uppercase text-xs mb-6 inline-block bg-emerald-100 px-5 py-2.5 rounded-full border border-emerald-200/50">
+          <span className="text-emerald-800 font-bold tracking-[0.3em] uppercase text-xs mb-6 inline-block bg-white/60 backdrop-blur-md px-5 py-2.5 rounded-full border border-emerald-200 shadow-sm">
             Portal Resmi Pemerintah Desa
           </span>
           <h1 className="text-5xl md:text-8xl font-black text-slate-900 leading-tight mb-8 tracking-tighter">
@@ -26,7 +41,7 @@ export default async function Home() {
               Kemang Tanduk
             </span>
           </h1>
-          <p className="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-slate-800 font-medium text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed p-4 rounded-2xl">
             Membangun masa depan desa yang mandiri melalui transparansi dan
             teknologi digital yang inklusif untuk seluruh warga.
           </p>
@@ -147,7 +162,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 6. LOKASI DESA (MAP BARU DENGAN SECTION KHUSUS) */}
+      {/* 6. LOKASI DESA */}
       <section id="lokasi" className="py-24 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
@@ -162,7 +177,6 @@ export default async function Home() {
           </div>
           
           <div className="w-full h-[450px] rounded-[3rem] overflow-hidden border border-slate-200 shadow-lg">
-            {/* Saya tambahkan parameter peta agar menunjuk ke Kemang Tanduk (Jika perlu diganti koordinatnya bisa diatur di src iframe ini) */}
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d262.5013965700584!2d104.18600811404579!3d-3.5010881003531544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3a2e70bc68724d%3A0x78fbf66f82786335!2sKantor%20Desa%20Kemang%20Tanduk!5e1!3m2!1sid!2sid!4v1772858739058!5m2!1sid!2sid" 
               width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy">
