@@ -2,6 +2,8 @@ import { supabase } from "@/lib/supabase";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ArsipBerita({
   searchParams,
 }: {

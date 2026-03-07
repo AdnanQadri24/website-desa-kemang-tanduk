@@ -3,6 +3,9 @@ import Navbar from "@/components/Navbar";
 import AduanForm from "@/components/AduanForm";
 import Link from "next/link";
 
+// TAMBAHKAN BARIS INI UNTUK MEMATIKAN CACHE
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   const { data: berita } = await supabase.from("berita").select("*").order("tanggal", { ascending: false }).limit(3);
   const { data: agenda } = await supabase.from("agenda").select("*").order("waktu", { ascending: true }).limit(4);
