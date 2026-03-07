@@ -4,12 +4,25 @@ import { supabase } from '@/lib/supabase';
 
 export default function AduanForm() {
   const [form, setForm] = useState({ nama: '', pesan: '' });
+  const [loading, setLoading] = useState(false);
   
   const send = async (e: any) => {
     e.preventDefault();
-    await supabase.from('aduan').insert([form]);
-    alert('Aduan terkirim!');
-    setForm({ nama: '', pesan: '' });
+    setLoading(true);
+    
+    // 1. Tangkap response dari Supabase (termasuk error-nya)
+    const { error } = await supabase.from('aduan').insert([form]);
+    
+    // 2. Cek apakah ada error
+    if (error) {
+      alert('Gagal mengirim aduan: ' + error.message);
+      console.error(error);
+    } else {
+      alert('Aspirasi Anda berhasil terkirim!');
+      setForm({ nama: '', pesan: '' });
+    }
+    
+    setLoading(false);
   };
   
   return (
@@ -28,7 +41,13 @@ export default function AduanForm() {
         onChange={e => setForm({ ...form, pesan: e.target.value })} 
         required 
       />
-      <button className="bg-emerald-600 text-white w-full py-4 rounded-xl font-bold hover:bg-emerald-700 hover:shadow-lg transition-all">Kirim Aspirasi</button>
+      <button 
+        type="submit"
+        disabled={loading}
+        className="bg-emerald-600 text-white w-full py-4 rounded-xl font-bold hover:bg-emerald-700 hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        {loading ? 'Mengirim Pesan...' : 'Kirim Aspirasi'}
+      </button>
     </form>
   );
 }
