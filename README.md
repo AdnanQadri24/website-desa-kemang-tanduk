@@ -2,7 +2,7 @@
 
 Sebuah platform web portal desa modern dan responsif yang dirancang untuk mendigitalkan informasi, transparansi, dan pelayanan masyarakat desa. Proyek ini dibangun menggunakan **Next.js (App Router)** dan **Supabase** sebagai *backend* as a service (BaaS).
 
-🌐 **Live Demo:** [Tulis Link Vercel Kamu Di Sini, contoh: https://desa-kemang-tanduk.vercel.app]
+🌐 **Live Demo:** [https://desa-kemang-tanduk.vercel.app](https://kemangtanduk.vercel.app/)
 
 > ⚠️ **DISCLAIMER / PERHATIAN PENTING** > Aplikasi/Website ini murni merupakan proyek **Portofolio & Demo Pembelajaran** pribadi. Segala nama tokoh, berita, alamat, dan data yang ada di dalamnya adalah data *dummy* (contoh) untuk keperluan pengujian sistem. Website ini **TIDAK TERAFILIASI** secara resmi dengan instansi, pemerintah, maupun pihak Desa Kemang Tanduk aslinya. Tidak ada maksud untuk menyinggung pihak atau golongan mana pun.
 
